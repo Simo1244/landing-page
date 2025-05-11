@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اربح بطاقة أمازون الآن!</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a00, #ff6a00);
+      font-family: 'Cairo', sans-serif;
+      text-align: center;
+      padding: 2em;
+      color: #fff;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 2em;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+    .gift-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1em;
+    }
+    .btn {
+      background: #00ffae;
+      color: #000;
+      border: none;
+      padding: 1em 2em;
+      font-size: 1.2em;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1em;
+      transition: 0.3s ease;
+    }
+    .btn:hover {
+      background: #00cc88;
+    }
+    .countdown {
+      font-size: 1.2em;
+      margin-top: 1em;
+      background: rgba(0,0,0,0.4);
+      padding: 0.5em;
+      border-radius: 8px;
+    }
+    .reviews {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #fff;
+    }
+    .review {
+      margin-bottom: 1em;
+      background: rgba(255,255,255,0.1);
+      padding: 0.5em;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>بطاقة أمازون مجانية بقيمة 100$!</h1>
+    <img src="https://www.citypng.com/public/uploads/preview/100-amazon-gift-card-11639772663z0xkqzqj2e.png" alt="Amazon Gift Card" class="gift-img">
+    <p>الفرصة محدودة! شارك الآن لتحصل على جائزتك قبل نفاذ الكمية.</p>
+    <div class="countdown" id="timer">الوقت المتبقي: 03:00</div>
+    <button class="btn" onclick="window.location.href='https://locked-content.com/?64024fb'">احصل عليها الآن</button>
+    <div class="reviews">
+      <div class="review">+ سارة من طنجة: جربت العرض وتوصلت بالبطاقة في أقل من 10 دقائق!</div>
+      <div class="review">+ هشام من الدار البيضاء: صفحة سهلة وجربتها وربحت فوراً.</div>
+      <div class="review">+ أمين من أكادير: شكراً بزاف، توصلت بجائزة صالحة 100%.</div>
+    </div>
+  </div>
+
+  <script>
+    // عد تنازلي 3 دقائق
+    let timeLeft = 180;
+    const timerEl = document.getElementById("timer");
+    const countdown = setInterval(() => {
+      let minutes = Math.floor(timeLeft / 60);
+      let seconds = timeLeft % 60;
+      timerEl.textContent = `الوقت المتبقي: ${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+      timeLeft--;
+      if (timeLeft < 0) clearInterval(countdown);
+    }, 1000);
+  </script>
+</body>
+</html>
